@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 
-
 const imageSchema = new mongoose.Schema({
   imageName: {
     type: String,
@@ -10,10 +9,10 @@ const imageSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  uploadedAt:{
+  uploadedAt: {
     type: Date,
-    default: Date.now
-  }
+    default: Date.now,
+  },
 });
 
 const Image = mongoose.model("Image", imageSchema);
